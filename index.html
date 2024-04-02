@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo-art-deco.jpg">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Javascript -->
+    <script src="./index.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <title>News Homepage | Frontend Mentor Challenge | CSS {de}Coder</title>
+
+</head>
+<body>
+    <header class="primary-header">
+        <h1 class="sr-only">The W News Homepage</h1>
+        <img class="logo" src="./images/logo.svg" alt="" width="65" height="40">
+        <button class="nav-open" id="open-btn" aria-labelledby="open-nav-label" aria-expanded="false">
+            <img src="./images/icon-menu.svg" alt="" width="40" height="17">
+            <span id="open-nav-label" hidden>open navigation menu</span>
+        </button>
+
+        <nav class="primary-navigation">
+            <div class="nav-menu">
+                <button class="nav-close" id="close-btn" aria-labelledby="close-nav-label">
+                    <img src="./images/icon-menu-close.svg" alt="" width="32" height="31">
+                    <span id="close-nav-label" hidden>close navigation menu</span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Trending</a></li>
+                    <li><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header> 
+
+    <main>
+         <div class="hero">
+            <section class="feature">
+                <h2 class="sr-only">Featured Article</h2>
+                <picture>
+                    <source srcset="./images/image-web-3-mobile.jpg"    media="(width < 700px)"/>
+                    <img src="./images/image-web-3-desktop.jpg" alt=""/>
+                </picture>
+                <h3>The Bright Future of Web 3.0?</h3>
+                <div class="feature-text">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                    <a class="btn" href="#">Read More</a>
+                </div>
+            </section>
+            <aside class="primary-aside">
+                <h2>Trending News</h2>
+                <div>
+                    <article>
+                        <a href="#" class="link">VS Electric Cars</a>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </article>
+                    <article>
+                        <a href="#" class="link">The Downsides of AI Artistry</a>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </article>
+                    <article>
+                        <a href="#" class="link">Is VC Funding Drying Up?</a>
+                        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+                    </article>
+                </div>
+            </aside>
+        </div> 
+
+        <section class="article-list">
+            <h2 class="sr-only">Latest News</h2>
+            <div>
+                <article class="card">
+                    <img src="./images/image-retro-pcs.jpg" alt="">
+                    <div class="card-body">
+                        <span>01</span>
+                        <div>
+                            <a href="#" class="link">Reviving Retro PCs</a>
+                            <p>What happens when old PCs are given modern upgrades?</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/image-top-laptops.jpg" alt=""/>
+                    <div class="card-body">
+                        <span>02</span>
+                        <div>
+                            <a class="link" href="#">Top 10 Laptops of 2024</a>
+                            <p>Our best picks for various needs and budgets.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./images/image-gaming-growth.jpg" alt=""/>
+                    <div class="card-body">
+                        <span>03</span>
+                        <div>
+                            <a class="link" href="#">The Growth of Gaming</a>
+                            <p>How the pandemic has sparked fresh opportunities.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
